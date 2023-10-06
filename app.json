@@ -25,7 +25,7 @@
     },
    "ANTILINK_VALUES": {
     "description": "Put words for antilink",
-     "value": "chat.whatsapp.com",
+     "value": "",
      "required" :false
     },
   "LEVEL_UP_MESSAGE": {
