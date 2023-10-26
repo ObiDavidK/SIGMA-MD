@@ -2,7 +2,7 @@
 //                                                                                                      //
 //                                   MULTI-DEVICE WHATSAPP BOT                                          //
 //                                                                                                      //
-//                                         v：1．0．0                                                   // 
+//                                            𝚅.𝟷.𝟸.𝟽                                                   // 
 //                                                                                                      //
 //              ███████╗██╗ ██████╗ ███╗   ███╗ █████╗     ███╗   ███╗██████╗                           //
 //              ██╔════╝██║██╔════╝ ████╗ ████║██╔══██╗    ████╗ ████║██╔══██╗                          //
@@ -348,7 +348,7 @@ Module_Exports({
             kingpath: __filename,
             infocmd: "To check Bot is Online"
         },
-        async(Void, citel, text, {isCreator}) => {
+        async(sigma, citel, text, {isCreator}) => {
           let get = text;
           let alivemessage = `*ι αм σηℓιηє нσω ¢αη ι нєℓρ уσυ*\n*_To Update ALive Message Use_*\n*Eg: _${prefix}alive Your_Alive_Message_*`;
           let urll = '';     
@@ -400,12 +400,12 @@ if(isCreator && text != "")
           urll = aliv.url || await botpic() ;
 
           
-const alivtxt = `${alivemessage}\n\n*_Type ${prefix}menu For My Commands list._*\n*_I am Multi-Device Whatsapp Bot Created By MAHER ZUBAIR_*\n*_For Any Help_*\n*_Join Support:  https://chat.whatsapp.com/JM1yBMlveulDrAN22jHcWV_*`;
+const alivtxt = `${alivemessage}\n\n*_Type ${prefix}menu For My Commands list._*\n*_I am Multi-Device Whatsapp Bot Created By MAHER ZUBAIR_*\n*_For Any Help_*\n*_Join Support:  ${sgc}_*`;
  const messageOptions = image ? { image: { url: urll }, caption: alivtxt }
                         : video? { video: { url: urll },gifPlayback: true, caption: alivtxt }
                         : { image: { url: await botpic() }, caption: alivtxt };
 
-  return Void.sendMessage(citel.chat, messageOptions,{quoted : citel });
+  return sigma.sendMessage(citel.chat, messageOptions,{quoted : citel });
         }
     )
 
