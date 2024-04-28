@@ -5,12 +5,12 @@
     "LANGUAGE": "English",
     "LANGCODE": "en",
     "STRINGS": { 
-        "updater": {
+        "updater": { 
             "UPDATE": "*_Your bot is Already up-to-date_*",
             "NEW_UPDATE": "*it's time to update the bot!*\n*Changes:*\n",
             "UPDATED_LOCAL": "*Updated Successfully !*"
         },
-        "global": {
+        "global": { 
             "botName": " SIGMA-MD",
             "body": "whatsapp Bot",
             "greet2" : "Thanks To Maher Zubair",
